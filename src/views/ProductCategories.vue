@@ -5,9 +5,9 @@
 
 	<div class="woocommerce columns-4">
 		<ul class="product-loop-categories">			
+					<!-- <img src="assets/images/product-category/7.jpg" alt="Accessories" width="250" height="232"> -->
 			<li v-for="product in products" :key="product" class="product-category product">
 				<a href="#">
-					<!-- <img src="assets/images/product-category/7.jpg" alt="Accessories" width="250" height="232"> -->
 					<img :src=product.image style="height: 232px">
 					<h3>{{product.title}} <mark class="count">(2)</mark></h3>
 				</a>

@@ -3620,7 +3620,8 @@ div.quantity.buttons_added {
 /*===================================================================================*/
 .top-bar {
   border-bottom: 1px solid #dddddd;
-  padding: 0.786em 0; }
+  /*padding: 0.786em 0; }*/
+  padding: 0.25em 0; }
   .top-bar .nav-inline .menu-item {
     display: inline-block;
     color: #959595;
@@ -3653,7 +3654,8 @@ div.quantity.buttons_added {
 /*  Header
 /*===================================================================================*/
 .site-header {
-  padding: 2.893em 0; }
+  /*padding: 2.893em 0; }*/
+  padding: 0.5em 0; }
   .site-header .dropdown-menu {
     z-index: 1001; }
 
