@@ -26,14 +26,29 @@
 		
 		<SearchBar /> <!-- Barra de búsqueda -->
 
-		<router-view v-slot="{Component}">
-			<keep-alive>
-				<component :is="Component" /> 
-			</keep-alive>
-		</router-view>
+		<div id="content" class="site-content" tabindex="-1">
+			<div class="container">
+
+				<nav class="woocommerce-breadcrumb"><a href="home.html">Home</a><span class="delimiter"><i class="fa fa-angle-right"></i></span>Laptops &amp; Computers</nav>
+
+				<div id="primary" class="content-area">
+					<main id="main" class="site-main">
+						<section>														
+							<router-view v-slot="{Component}">
+								<keep-alive>
+									<component :is="Component" /> 
+								</keep-alive>
+							</router-view>
+						</section>
+					</main><!-- #main -->
+				</div><!-- #primary -->
+			</div><!-- .container -->
+		</div>
+
+		
 
 		<TheFooter />
-	
+
 	</div>
 </template>
 
@@ -41,11 +56,11 @@
 	import TheHeader from '@/components/TheHeader'
 	import SearchBar from '@/components/SearchBar'
 	import TheFooter from '@/components/TheFooter'
-	
+
 	export default {
 		data () {
 			return {
-				
+
 			}
 		},
 		components: {
