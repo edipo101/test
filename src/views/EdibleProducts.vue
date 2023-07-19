@@ -1,9 +1,9 @@
 <template>
 	<header>
-		<h2 class="h1">Categorias de productos</h2>
+		<h2 class="h1">Categorias comestibles</h2>
 	</header>
 
-	<div class="woocommerce columns-6">
+	<div class="woocommerce columns-4">
 		<ul class="product-loop-categories">			
 					<!-- <img src="assets/images/product-category/7.jpg" alt="Accessories" width="250" height="232"> -->
 			<li v-for="product in products" :key="product" class="product-category product">
@@ -29,7 +29,7 @@
 		created() {
 			axios
 			// .get('https://fakestoreapi.com/products')
-			.get('./categories.js')
+			.get('./comestibles.js')
 			.then((response) => {
 				this.products = response.data
 			})

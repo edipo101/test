@@ -58,8 +58,8 @@
 						<nav>
 							<ul id="menu-main-menu" class="nav nav-inline yamm">
 								<li class="menu-item animate-dropdown"><router-link :to="{name: 'Home'}">Inicio</router-link></li>
-								<li class="menu-item animate-dropdown"><router-link :to="{name: 'ProductCategories'}">Comestibles</router-link></li>
-								<li class="menu-item"><a title="Features" href="#">Artículos</a></li>
+								<li class="menu-item animate-dropdown"><router-link :to="{name: 'EdibleProducts'}">Comestibles</router-link></li>
+								<li class="menu-item"><router-link :to="{name: 'ProductCategories'}">Categorias</router-link></li>
 								<li class="menu-item"><a title="Features" href="#">Discos</a></li>
 								<li class="menu-item"><a title="Features" href="#">Prendas</a></li>
 								<li class="menu-item"><a title="Features" href="#">Ofertas</a></li>
